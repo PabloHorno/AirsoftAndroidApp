@@ -11,9 +11,24 @@ namespace AirsoftApp
 	{
 		public App ()
 		{
-			InitializeComponent();
+            //InitializeComponent();
 
-			MainPage = new AirsoftApp.MainPage();
+            //MainPage = new AirsoftApp.MainPage();
+            MainPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    VerticalOptions = LayoutOptions.Center,
+                    Children =
+                    {
+                        new Label
+                        {
+                            HorizontalTextAlignment = TextAlignment.Center,
+                            Text = "Primera App PHP"
+                        }
+                    }
+                }
+            };
 		}
 
 		protected override void OnStart ()
