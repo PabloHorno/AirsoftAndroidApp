@@ -25,6 +25,11 @@ namespace AirsoftApp
                         {
                             HorizontalTextAlignment = TextAlignment.Center,
                             Text = "Primera App PHP"
+                        },
+                        new Label
+                        {
+                            HorizontalTextAlignment = TextAlignment.Center,
+                            Text = "App desarrollada by PhP"
                         }
                     }
                 }
