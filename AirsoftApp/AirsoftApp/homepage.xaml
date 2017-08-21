@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AirsoftApp.homepage">
     <StackLayout>
-        <Button Text="Haz click" x:Name="btn_sumar"></Button>
+        <Label Text="Contador de gentuza" x:Name="lbl_titulo" HorizontalTextAlignment="Center"></Label>
+        <Label Text="0" x:Name="lbl_chicas" BackgroundColor="Purple" HorizontalTextAlignment="Center"></Label>
+        <Label Text="0" x:Name="lbl_chicos" BackgroundColor="Blue" HorizontalTextAlignment="Center"></Label>
+
+        <Button Text="Chica" x:Name="btn_chicas" ></Button>
+        <Button Text="Chico" x:Name="btn_chicos"></Button>
     </StackLayout>
 </ContentPage>

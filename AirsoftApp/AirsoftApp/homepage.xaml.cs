@@ -15,17 +15,24 @@ namespace AirsoftApp
 		public homepage ()
 		{
 			InitializeComponent ();
-		}int count = 0;
+		}int count_chicas = 0, count_chicos = 0;
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            btn_sumar.Clicked += Btn_sumar_Clicked;
+            btn_chicas.Clicked += Btn_chicas_Clicked;
+            btn_chicos.Clicked += Btn_chicos_Clicked;
         }
 
-        private void Btn_sumar_Clicked(object sender, EventArgs e)
+        private void Btn_chicos_Clicked(object sender, EventArgs e)
         {
-            count++;
-            btn_sumar.Text = count.ToString();
+            count_chicos++;
+            lbl_chicos.Text = count_chicos.ToString();
+        }
+
+        private void Btn_chicas_Clicked(object sender, EventArgs e)
+        {
+            count_chicas++;
+            lbl_chicas.Text = count_chicas.ToString();
         }
     }
 }
