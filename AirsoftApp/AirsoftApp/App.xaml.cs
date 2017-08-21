@@ -14,25 +14,9 @@ namespace AirsoftApp
             //InitializeComponent();
 
             //MainPage = new AirsoftApp.MainPage();
-            MainPage = new ContentPage
+            MainPage = new homepage
             {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children =
-                    {
-                        new Label
-                        {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Primera App PHP"
-                        },
-                        new Label
-                        {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "App desarrollada by PhP"
-                        }
-                    }
-                }
+                Title = "Nuevo boton AXML"
             };
 		}
 
