@@ -1,13 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AirsoftApp.homepage">
-    <StackLayout>
-        <Label Text="Contador de gentuza" x:Name="lbl_titulo" HorizontalTextAlignment="Center"></Label>
-        <Label Text="0" x:Name="lbl_chicas" BackgroundColor="Purple" HorizontalTextAlignment="Center"></Label>
-        <Label Text="0" x:Name="lbl_chicos" BackgroundColor="Blue" HorizontalTextAlignment="Center"></Label>
-
-        <Button Text="Chica" x:Name="btn_chicas" ></Button>
-        <Button Text="Chico" x:Name="btn_chicos"></Button>
+             x:Class="AirsoftApp.homepage"
+             Title="Home">
+    <StackLayout Padding="10,12">
+        <Entry x:Name="entry_nombre" Placeholder="Nombre"></Entry>
+        <Button Text="Guardar" x:Name="btn_guardar"></Button>
     </StackLayout>
 </ContentPage>

@@ -14,9 +14,8 @@ namespace AirsoftApp
             //InitializeComponent();
 
             //MainPage = new AirsoftApp.MainPage();
-            MainPage = new homepage
+            MainPage = new NavigationPage(new homepage())
             {
-                Title = "Nuevo boton AXML"
             };
 		}
 
